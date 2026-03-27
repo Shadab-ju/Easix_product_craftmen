@@ -1,0 +1,200 @@
+/* resetting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #004E61;
+}
+/*
+header
+*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+
+}
+.container1{
+    max-width: 1240px;
+    padding: 0px 20px;
+    margin: 0px auto;
+}
+.navbar{
+    padding: 8px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo_title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.navbar .logo_title .logo img{
+    width: 48px;
+    border-radius: 50%;
+}
+
+.profile_menu .profile img{
+    width: 48px;
+    border-radius: 50%;
+}
+.navbar .profile_menu {
+    position: relative;
+}
+
+.navbar .profile_menu .dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    background-color: #dedcdc;
+}
+.navbar .profile_menu .dropdown a{
+    display: inline-block;
+    padding: 8px 16px;
+}
+.navbar .profile_menu:hover .dropdown{
+    display: block;
+}
+
+/* invite section */
+.invites{
+    padding: 120px;
+    background-color: #f7f9fc;
+}
+.invites .invite_list .list img{
+    width: 120px;
+}
+.invites .invite_list .list{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.invites .invite_list .list .quick_detail{
+    padding: 16px;
+}
+
+.invites .invite_list .list .quick_detail h2{
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+.invites .invite_list .list .quick_detail h4{
+    font-size: clamp(1rem, 1vw, 1rem);
+}
+.invites .invite_list .list .view_profile_button button{
+    margin-top: 16px;
+    background-color: #004354;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 350px;
+    border-radius: 5px;
+}
+
+
+/* page container */
+.page_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 20px;
+}
+.page_container .page{
+    padding: 16px 32px;
+    background-color: #F2F4F6;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+.page_container .active{
+    background-color: #004354;
+    color: white;
+}
+
+/* footer */
+
+.footer_copyright{
+    background-color: #1c1c1c;
+    color: white;
+    padding: 8px 16px;
+}
+.footer_copyright .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 16px;
+}
+.footer_copyright .footer .easix_punch_line {
+    flex-basis: 350px;
+}
+.footer_copyright .footer .easix_punch_line h3{
+    font-size: clamp(2.5rem, 3vw, 3.2rem);
+}
+.footer_copyright .footer .easix_punch_line h5{
+    font-size: clamp(1.5rem, 1.5vw, 1.8rem);
+    font-weight: normal;
+}
+.footer_copyright .footer .quick_links h5{
+    font-size: 1.2rem;
+}
+.footer_copyright .footer .quick_links li{
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.footer_copyright .footer .privacy_policy h5{
+    font-size: 1rem;
+}
+.footer_copyright .footer .privacy_policy li{
+    padding: 8px 16px;
+    font-size: 16px;
+}
+.footer_copyright .footer .newsletter h5{
+    font-size: 1.2rem;
+}
+
+.footer_copyright .footer .newsletter p{
+    margin-block: 8px 8px;
+}
+
+
+
+.footer_copyright .footer .newsletter .subscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.footer_copyright .footer .newsletter .subscription input,.footer_copyright .footer .newsletter .subscription button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.footer_copyright .footer .newsletter .subscription button {
+    background-color: teal;
+    color: #fff;
+    flex-basis: 30%;
+}
+.footer_copyright .copyright{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 8px 16px;
+}
